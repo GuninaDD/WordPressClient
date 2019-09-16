@@ -5,4 +5,24 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Menu dimens -->
+
+    <dimen name="avatar_size">60dp</dimen>
+    <dimen name="avatar_padding">1dp</dimen>
+    <dimen name="avatar_margin_top">27dp</dimen>
+    <dimen name="avatar_margin_left">16dp</dimen>
+    <dimen name="avatar_margin_right">26dp</dimen>
+    <dimen name="username_margin_top">50dp</dimen>
+    <dimen name="username_margin_left">24dp</dimen>
+    <dimen name="username_margin_right">91dp</dimen>
+    <dimen name="username_height">22dp</dimen>
+    <dimen name="username_text_size">18sp</dimen>
+    <dimen name="email_text_size">14sp</dimen>
+    <dimen name="email_margin_left">16dp</dimen>
+    <dimen name="email_margin_top">48dp</dimen>
+    <dimen name="email_height">20dp</dimen>
+
+
+
 </resources>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#2A56C6</color>
+    <color name="colorPrimaryDark">#2247A4</color>
+    <color name="colorAccent">#ADB4EC</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTagRed">#FF0000</color>
+    <color name="colorTagBlue">#146800</color>
+    <color name="colorTagGreen">#001E68</color>
+    <color name="colorTagLightGreen">#31FB00</color>
+    <color name="colorBlogURLandTime">#878787</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorHeaders">#4A4A4A</color>
+    <color name="colorAvatarLoadingFAB">#4A90E2</color>
+    <color name="colorDateHeaders">#9B9B9B</color>
+
 </resources>

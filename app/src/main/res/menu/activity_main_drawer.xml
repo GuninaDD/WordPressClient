@@ -5,34 +5,34 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_blogs"
+            android:icon="@mipmap/ic_menu_blogs"
+            android:title="@string/menu_blogs" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_categories"
+            android:icon="@mipmap/ic_menu_categories"
+            android:title="@string/menu_categories" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_labels"
+            android:icon="@mipmap/ic_menu_labels"
+            android:title="@string/menu_labels" />
         <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
-    </group>
+            android:id="@+id/nav_favorites"
+            android:icon="@mipmap/ic_menu_favorites"
+            android:title="@string/menu_favorites" />
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@mipmap/ic_menu_bookmarks"
+            android:title="@string/menu_bookmarks"
+            />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/ic_menu_exit"
+            android:title="@string/menu_exit"
+            />
+
+    </group>
 
 </menu>
