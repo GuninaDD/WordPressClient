@@ -1,16 +1,16 @@
-package com.simbirsoft.wordpressclient.ui.share;
+package com.simbirsoft.wordpressclient.ui.labels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class LabelsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public LabelsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is slideshow fragment");
     }
 
     public LiveData<String> getText() {

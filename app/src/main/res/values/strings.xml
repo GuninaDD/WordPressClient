@@ -14,14 +14,19 @@
     <string name="menu_bookmarks">Закладки</string>
     <string name="menu_exit">Выход</string>
 
-    <string-array name="email_list">
-        <item>heyfromsteph@gmail.com</item>
-    </string-array>
-
     <string name="username">Вася Иванов</string>
+
     <string name="search">Поиск</string>
     <string name="blog_image_contentDescription">Обложка блога</string>
+    <string name="blogHeader">Мой Блог</string>
 
-    <string name="blog_header">Мой Блог</string>
-    <string name="blog_URL">myblog.wordpress.com</string>
+    <string name="blogURL">myblog.wordpress.com</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="email_list">
+        <item>heyfromsteph@gmail.com</item>
+        <item>heyfromsteph1@gmail.com</item>
+    </string-array>
+
+
 </resources>

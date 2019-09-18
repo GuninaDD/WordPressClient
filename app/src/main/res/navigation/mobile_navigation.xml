@@ -7,39 +7,39 @@
 
     <fragment
         android:id="@+id/nav_blogs"
-        android:name="com.simbirsoft.wordpressclient.ui.home.HomeFragment"
+        android:name="com.simbirsoft.wordpressclient.ui.blogs.BlogsFragment"
         android:label="@string/menu_blogs"
-        tools:layout="@layout/fragment_blogs" />
+        tools:layout="@layout/screen_blogs" />
 
     <fragment
         android:id="@+id/nav_categories"
-        android:name="com.simbirsoft.wordpressclient.ui.gallery.GalleryFragment"
+        android:name="com.simbirsoft.wordpressclient.ui.categories.CategoriesFragment"
         android:label="@string/menu_categories"
-        tools:layout="@layout/fragment_categories" />
+        tools:layout="@layout/screen_categories" />
 
     <fragment
         android:id="@+id/nav_labels"
-        android:name="com.simbirsoft.wordpressclient.ui.slideshow.SlideshowFragment"
+        android:name="com.simbirsoft.wordpressclient.ui.labels.LabelsFragment"
         android:label="@string/menu_labels"
-        tools:layout="@layout/fragment_labels" />
+        tools:layout="@layout/screen_labels" />
 
     <fragment
         android:id="@+id/nav_favorites"
-        android:name="com.simbirsoft.wordpressclient.ui.tools.ToolsFragment"
+        android:name="com.simbirsoft.wordpressclient.ui.favorites.FavoritesFragment"
         android:label="@string/menu_favorites"
-        tools:layout="@layout/fragment_favorites" />
+        tools:layout="@layout/screen_favorites" />
 
     <fragment
         android:id="@+id/nav_bookmarks"
-        android:name="com.simbirsoft.wordpressclient.ui.share.ShareFragment"
+        android:name="com.simbirsoft.wordpressclient.ui.bookmarks.BookmarksFragment"
         android:label="@string/menu_bookmarks"
-        tools:layout="@layout/fragment_bookmarks" />
+        tools:layout="@layout/screen_bookmarks" />
 
     <fragment
         android:id="@+id/nav_exit"
-        android:name="com.simbirsoft.wordpressclient.ui.share.ShareFragment"
+        android:name="com.simbirsoft.wordpressclient.ui.bookmarks.BookmarksFragment"
         android:label="@string/menu_exit"
-        tools:layout="@layout/fragment_exit" />
+        tools:layout="@layout/screen_exit" />
 
 
 </navigation>

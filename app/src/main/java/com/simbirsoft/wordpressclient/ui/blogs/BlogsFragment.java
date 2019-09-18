@@ -30,7 +30,7 @@ public class BlogsFragment extends Fragment {
         blogsList = new ArrayList<>();
         blogsViewModel =
                 ViewModelProviders.of(this).get(BlogsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_blogs, container, false);
+        View root = inflater.inflate(R.layout.screen_blogs, container, false);
 
         recyclerView = root.findViewById(R.id.recyclerView_blogs);
         recyclerView.setHasFixedSize(true);

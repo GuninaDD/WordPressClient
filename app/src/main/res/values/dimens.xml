@@ -41,6 +41,12 @@
     <dimen name="blog_text_textSize">10sp</dimen>
     <dimen name="min_width">340dp</dimen>
 
+    <!-- Screen Categories dimens -->
+
+    <dimen name="categories_header_textSize">12sp</dimen>
+    <dimen name="categories_description_textSize">10sp</dimen>
+
+
 
 
 
