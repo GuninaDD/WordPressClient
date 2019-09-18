@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+
+            app:title="@string/profile_header" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/profile_avatar_size"
+        android:layout_height="@dimen/profile_avatar_size"
+        android:layout_marginLeft="@dimen/profile_avatar_margin_l_r"
+        android:layout_marginTop="@dimen/profile_avatar_margin_top"
+        android:layout_marginRight="@dimen/profile_avatar_margin_l_r"
+        android:background="@drawable/profile_avatar_bg"
+        android:contentDescription="@string/profile_image"
+        android:padding="@dimen/profile_avatar_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/profile_avatar"
+        tools:srcCompat="@drawable/profile_avatar" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/fab_load_size"
+        android:layout_height="@dimen/fab_load_size"
+        android:layout_marginStart="@dimen/fab_load_margin_left"
+        android:layout_marginLeft="@dimen/fab_load_margin_left"
+        android:layout_marginTop="@dimen/fab_load_margin_top"
+        android:layout_marginEnd="@dimen/fab_load_margin_right"
+        android:layout_marginRight="@dimen/fab_load_margin_right"
+        android:layout_marginBottom="@dimen/fab_load_margin_bottom"
+        android:background="@drawable/profile_avatar_bg"
+        android:contentDescription="@string/profile_image"
+        app:layout_constraintBottom_toTopOf="@id/appbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_load_avatar" />
+
+    <ListView
+        android:id="@+id/list_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_margin_l_r"
+        android:layout_marginTop="@dimen/list_margin_top"
+        android:layout_marginRight="@dimen/list_margin_l_r"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

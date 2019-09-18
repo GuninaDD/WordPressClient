@@ -46,8 +46,38 @@
     <dimen name="categories_header_textSize">12sp</dimen>
     <dimen name="categories_description_textSize">10sp</dimen>
 
+    <!-- Screen Profile dimens -->
+
+    <dimen name="profile_avatar_margin_top">15dp</dimen>
+    <dimen name="profile_avatar_margin_l_r">123dp</dimen>
+    <dimen name="profile_avatar_size">115dp</dimen>
+    <dimen name="profile_avatar_padding">6dp</dimen>
+    <dimen name="fab_load_size">30dp</dimen>
+    <dimen name="fab_load_margin_top">102dp</dimen>
+    <dimen name="fab_load_margin_bottom">37dp</dimen>
+    <dimen name="fab_load_margin_left">79dp</dimen>
+    <dimen name="fab_load_margin_right">128dp</dimen>
+    <dimen name="list_height">160dp</dimen>
+    <dimen name="list_margin_l_r">10dp</dimen>
+    <dimen name="list_margin_top">20dp</dimen>
+    <dimen name="list_single_text_size">12sp</dimen>
+    <dimen name="list_double_header_text_size">8sp</dimen>
+    <dimen name="list_double_value_text_size">12sp</dimen>
 
 
+    <!-- Screen Authorization dimens -->
+
+    <dimen name="logo_height">43dp</dimen>
+    <dimen name="logo_width">180dp</dimen>
+    <dimen name="logo_textSize">36sp</dimen>
+    <dimen name="logo_margin_top">228dp</dimen>
+    <dimen name="logo_margin_left">85dp</dimen>
+    <dimen name="logo_margin_right">98dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_width">320dp</dimen>
+    <dimen name="button_textSize">14sp</dimen>
+    <dimen name="button_margin_left">20dp</dimen>
+    <dimen name="button_margin_top">36dp</dimen>
 
 
 

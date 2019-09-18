@@ -23,10 +23,19 @@
     <string name="blogURL">myblog.wordpress.com</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="title_activity_profile">Мой профиль</string>
     <string-array name="email_list">
         <item>heyfromsteph@gmail.com</item>
         <item>heyfromsteph1@gmail.com</item>
     </string-array>
+
+    <string name="profile_header">Мой профиль</string>
+    <string name="profile_image">Изображение профиля</string>
+
+    <string name="logo_authorization">WordPress</string>
+    <string name="button_login">Войти</string>
+    <string name="button_notification">Зарегистрироваться</string>
+
 
 
 </resources>
