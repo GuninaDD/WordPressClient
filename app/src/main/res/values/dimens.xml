@@ -39,6 +39,7 @@
     <dimen name="blog_header_text_size">14sp</dimen>
     <dimen name="blog_text_padding_bottom">25dp</dimen>
     <dimen name="blog_text_textSize">10sp</dimen>
+    <dimen name="min_width">340dp</dimen>
 
 
 
