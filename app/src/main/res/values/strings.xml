@@ -19,4 +19,9 @@
     </string-array>
 
     <string name="username">Вася Иванов</string>
+    <string name="search">Поиск</string>
+    <string name="blog_image_contentDescription">Обложка блога</string>
+
+    <string name="blog_header">Мой Блог</string>
+    <string name="blog_URL">myblog.wordpress.com</string>
 </resources>

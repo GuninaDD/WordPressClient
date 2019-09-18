@@ -24,5 +24,24 @@
     <dimen name="email_height">20dp</dimen>
 
 
+    <!-- Screen_blogs dimens -->
+
+    <dimen name="card_height">80dp</dimen>
+    <dimen name="card_margin_top">20dp</dimen>
+    <dimen name="card_margin_left_and_right">10dp</dimen>
+    <dimen name="image_size">36dp</dimen>
+    <dimen name="image_margin">22dp</dimen>
+    <dimen name="image_padding">6dp</dimen>
+    <dimen name="blog_header_padding_top">23dp</dimen>
+    <dimen name="blog_header_margin_bottom">3dp</dimen>
+    <dimen name="blog_header_height">18dp</dimen>
+    <dimen name="blog_text_height">14dp</dimen>
+    <dimen name="blog_header_text_size">14sp</dimen>
+    <dimen name="blog_text_padding_bottom">25dp</dimen>
+    <dimen name="blog_text_textSize">10sp</dimen>
+
+
+
+
 
 </resources>
