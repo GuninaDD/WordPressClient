@@ -55,7 +55,6 @@
         android:layout_marginTop="@dimen/fab_load_margin_top"
         android:layout_marginEnd="@dimen/fab_load_margin_right"
         android:layout_marginRight="@dimen/fab_load_margin_right"
-        android:layout_marginBottom="@dimen/fab_load_margin_bottom"
         android:background="@drawable/profile_avatar_bg"
         android:contentDescription="@string/profile_image"
         app:layout_constraintBottom_toTopOf="@id/appbar"
@@ -66,19 +65,23 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@mipmap/ic_load_avatar" />
 
-    <ListView
-        android:id="@+id/list_profile"
+    <FrameLayout
+        android:id="@+id/profile_card_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_margin_l_r"
         android:layout_marginLeft="@dimen/list_margin_l_r"
         android:layout_marginTop="@dimen/list_margin_top"
+        android:layout_marginEnd="@dimen/list_margin_l_r"
         android:layout_marginRight="@dimen/list_margin_l_r"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

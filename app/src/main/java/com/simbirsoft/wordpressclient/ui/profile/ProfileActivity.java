@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
+import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -20,6 +20,13 @@ public class ProfileActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        if (savedInstanceState == null)
+        {
+            //заполненный профиль - CardProfileFilledFragment, незаполненный -  CardProfileInfilledFragment
+
+            getSupportFragmentManager().beginTransaction().add(R.id.profile_card_container, CardProfileFilledFragment.newInstance()).commit();
+        }
 
 
 

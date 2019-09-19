@@ -63,6 +63,9 @@
     <dimen name="list_single_text_size">12sp</dimen>
     <dimen name="list_double_header_text_size">8sp</dimen>
     <dimen name="list_double_value_text_size">12sp</dimen>
+    <dimen name="list_double_item_height">45dp</dimen>
+    <dimen name="list_double_item_margin_top">7dp</dimen>
+    <dimen name="list_double_item_margin_bottom">4dp</dimen>
 
 
     <!-- Screen Authorization dimens -->
@@ -78,6 +81,18 @@
     <dimen name="button_textSize">14sp</dimen>
     <dimen name="button_margin_left">20dp</dimen>
     <dimen name="button_margin_top">36dp</dimen>
+
+    <!-- Screen Posts dimens -->
+
+    <dimen name="post_card_width">340</dimen>
+    <dimen name="post_card_height">294</dimen>
+    <dimen name="post_avatar_size">40dp</dimen>
+    <dimen name="post_avatar_margin">20dp</dimen>
+    <dimen name="username_textSize">12sp</dimen>
+    <dimen name="post_time_textSize">8sp</dimen>
+    <dimen name="post_header_textSize">16sp</dimen>
+    <dimen name="post_image_width">320dp</dimen>
+    <dimen name="post_header_height">160dp</dimen>
 
 
 
