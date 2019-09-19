@@ -21,6 +21,7 @@ import com.simbirsoft.wordpressclient.ui.bookmarks.BookmarksFragment;
 import com.simbirsoft.wordpressclient.ui.categories.CategoriesFragment;
 import com.simbirsoft.wordpressclient.ui.favorites.FavoritesFragment;
 import com.simbirsoft.wordpressclient.ui.labels.LabelsFragment;
+import com.simbirsoft.wordpressclient.ui.posts.PostsActivity;
 import com.simbirsoft.wordpressclient.ui.profile.ProfileActivity;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawer;
     private ActionBarDrawerToggle drawerToggle;
     ImageButton imageButton;
+    Intent intent;
 
 
 
@@ -186,4 +188,6 @@ public void openProfile(View view)
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

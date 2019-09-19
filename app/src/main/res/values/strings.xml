@@ -24,17 +24,29 @@
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="title_activity_profile">Мой профиль</string>
+    <string name="profile_header">Мой профиль</string>
+
+    <string name="profile_image">Изображение профиля</string>
+    <string name="post_image">Обложка поста</string>
+
+
+    <string name="logo_authorization">WordPress</string>
+
+    <string name="button_login">Войти</string>
+    <string name="button_notification">Зарегистрироваться</string>
+    <string name="user1">Василий Петров</string>
+
+    <string name="user2">Иван Иванов</string>
+    <string name="time1">Сегодня, 13:45</string>
+    <string name="time2">Вчера, 13:45</string>
+    <string name="post_header">Заголовок поста</string>
     <string-array name="email_list">
         <item>heyfromsteph@gmail.com</item>
         <item>heyfromsteph1@gmail.com</item>
     </string-array>
 
-    <string name="profile_header">Мой профиль</string>
-    <string name="profile_image">Изображение профиля</string>
 
-    <string name="logo_authorization">WordPress</string>
-    <string name="button_login">Войти</string>
-    <string name="button_notification">Зарегистрироваться</string>
+<string name="label">Метка</string>
 
 
 

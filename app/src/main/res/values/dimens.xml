@@ -84,15 +84,46 @@
 
     <!-- Screen Posts dimens -->
 
-    <dimen name="post_card_width">340</dimen>
-    <dimen name="post_card_height">294</dimen>
+    <dimen name="post_card_width">340dp</dimen>
+    <dimen name="post_card_height">294dp</dimen>
     <dimen name="post_avatar_size">40dp</dimen>
     <dimen name="post_avatar_margin">20dp</dimen>
-    <dimen name="username_textSize">12sp</dimen>
+    <dimen name="user_textSize">12sp</dimen>
     <dimen name="post_time_textSize">8sp</dimen>
     <dimen name="post_header_textSize">16sp</dimen>
     <dimen name="post_image_width">320dp</dimen>
-    <dimen name="post_header_height">160dp</dimen>
+    <dimen name="post_image_height">160dp</dimen>
+    <dimen name="post_image_margin_left_right">10dp</dimen>
+    <dimen name="post_image_margin_top">25dp</dimen>
+    <dimen name="post_header_height">24dp</dimen>
+    <dimen name="post_header_margin">20dp</dimen>
+    <dimen name="user_margin_left">20dp</dimen>
+    <dimen name="user_margin_top">26dp</dimen>
+    <dimen name="user_margin_right">167dp</dimen>
+    <dimen name="button_settings_width">4dp</dimen>
+    <dimen name="button_settings_height">16dp</dimen>
+    <dimen name="button_settings_margin_left">143dp</dimen>
+    <dimen name="button_settings_margin_right">20dp</dimen>
+    <dimen name="button_settings_margin_top">32dp</dimen>
+    <dimen name="time_width">55dp</dimen>
+    <dimen name="time_height">10dp</dimen>
+    <dimen name="time_margin_left">20dp</dimen>
+    <dimen name="time_margin_right">205dp</dimen>
+    <dimen name="time_margin_top">4dp</dimen>
+
+
+    <!--Screen labels dimens -->
+
+    <dimen name="label_size">7dp</dimen>
+    <dimen name="label_margin_top">19dp</dimen>
+    <dimen name="label_margin_left">12dp</dimen>
+    <dimen name="label_header_text_size">12sp</dimen>
+    <dimen name="label_header_height">14sp</dimen>
+    <dimen name="label_header_margin_left">13dp</dimen>
+    <dimen name="label_header_margin_top">16dp</dimen>
+    <dimen name="label_header_margin_bottom">13dp</dimen>
+
+
 
 
 

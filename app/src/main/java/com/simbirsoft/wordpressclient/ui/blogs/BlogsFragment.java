@@ -1,5 +1,6 @@
 package com.simbirsoft.wordpressclient.ui.blogs;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.simbirsoft.wordpressclient.R;
+import com.simbirsoft.wordpressclient.ui.posts.PostsActivity;
+import com.simbirsoft.wordpressclient.ui.posts.PostsAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +28,7 @@ public class BlogsFragment extends Fragment {
     List<Blogs> blogsList;
 
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         blogsList = new ArrayList<>();
@@ -33,7 +37,7 @@ public class BlogsFragment extends Fragment {
         View root = inflater.inflate(R.layout.screen_blogs, container, false);
 
         recyclerView = root.findViewById(R.id.recyclerView_blogs);
-        recyclerView.setHasFixedSize(true);
+       // recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
 
@@ -53,6 +57,11 @@ public class BlogsFragment extends Fragment {
        blogsAdapter = new BlogsAdapter(getActivity(), blogsList);
        recyclerView.setAdapter(blogsAdapter);
 
+
+
         return root;
     }
+
+
+
 }
