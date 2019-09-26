@@ -1,173 +1,52 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="nav_header_height">176dp</dimen>
 
-    <!-- Menu dimens -->
+    <!-- Text sizes -->
 
-    <dimen name="avatar_size">60dp</dimen>
-    <dimen name="avatar_padding">1dp</dimen>
-    <dimen name="avatar_margin_top">27dp</dimen>
-    <dimen name="avatar_margin_left">16dp</dimen>
-    <dimen name="avatar_margin_right">26dp</dimen>
-    <dimen name="username_margin_top">50dp</dimen>
-    <dimen name="username_margin_left">24dp</dimen>
-    <dimen name="username_margin_right">91dp</dimen>
-    <dimen name="username_height">22dp</dimen>
-    <dimen name="username_text_size">18sp</dimen>
-    <dimen name="email_text_size">14sp</dimen>
-    <dimen name="email_margin_left">16dp</dimen>
-    <dimen name="email_margin_top">48dp</dimen>
-    <dimen name="email_height">20dp</dimen>
+    <dimen name="textsize_xxsmall">8sp</dimen>
+    <dimen name="textsize_time">9sp</dimen>
+    <dimen name="textsize_xsmall">10sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_content">13sp</dimen>
+    <dimen name="textsize_medium">14sp</dimen>
+    <dimen name="textsize_large">16sp</dimen>
+    <dimen name="textsize_xlarge">18sp</dimen>
+    <dimen name="textsize_xxlarge">27sp</dimen>
+    <dimen name="textsize_logo">36sp</dimen>
 
+    <!-- Paddings/margins -->
 
-    <!-- Screen_blogs dimens -->
+    <dimen name="padding_frame">1dp</dimen>
+    <dimen name="spacing_xxxsmall">5dp</dimen>
+    <dimen name="spacing_xxsmall">10dp</dimen>
+    <dimen name="spacing_xsmall">15dp</dimen>
+    <dimen name="spacing_small">20dp</dimen>
+    <dimen name="spacing_medium">25dp</dimen>
+    <dimen name="spacing_large">30dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xxlarge">40dp</dimen>
+    <dimen name="spacing_xxxlarge">50dp</dimen>
+    <dimen name="spacing_logo_left">85dp</dimen>
+    <dimen name="spacing_username_left">90dp</dimen>
+    <dimen name="spacing_logo_right">100dp</dimen>
+    <dimen name="spacing_btnsettings_left">145dp</dimen>
+    <dimen name="spacing_time_right">205dp</dimen>
+    <dimen name="spacing_logo_top">230dp</dimen>
 
-    <dimen name="card_height">80dp</dimen>
-    <dimen name="card_margin_top">20dp</dimen>
-    <dimen name="card_margin_left_and_right">10dp</dimen>
-    <dimen name="image_size">36dp</dimen>
-    <dimen name="image_margin">22dp</dimen>
-    <dimen name="image_padding">6dp</dimen>
-    <dimen name="blog_header_padding_top">23dp</dimen>
-    <dimen name="blog_header_margin_bottom">3dp</dimen>
-    <dimen name="blog_header_height">18dp</dimen>
-    <dimen name="blog_text_height">14dp</dimen>
-    <dimen name="blog_header_text_size">14sp</dimen>
-    <dimen name="blog_text_padding_bottom">25dp</dimen>
-    <dimen name="blog_text_textSize">10sp</dimen>
-    <dimen name="min_width">340dp</dimen>
+    <!-- Views sizes -->
 
-    <!-- Screen Categories dimens -->
+    <dimen name="size_iv_publicationtime">6dp</dimen>
+    <dimen name="size_iv_labelcolor">7dp</dimen>
+    <dimen name="height_tags">12dp</dimen>
+    <dimen name="width_smalltag">26dp</dimen>
+    <dimen name="size_iv_userimage">28dp</dimen>
+    <dimen name="size_btn_postsettings">30dp</dimen>
+    <dimen name="size_iv_postuser">40dp</dimen>
+    <dimen name="height_btn">40dp</dimen>
+    <dimen name="width_bigtag">57dp</dimen>
+    <dimen name="size_imgbtn_menuavatar">60dp</dimen>
+    <dimen name="height_nav_header">176dp</dimen>
+    <dimen name="width_btn">320dp</dimen>
 
-    <dimen name="categories_header_textSize">12sp</dimen>
-    <dimen name="categories_header_margin_top">8dp</dimen>
-    <dimen name="categories_header_margin_bottom">7dp</dimen>
-    <dimen name="categories_header_margin_left">11dp</dimen>
-    <dimen name="categories_description_textSize">10sp</dimen>
-
-    <!-- Screen Profile dimens -->
-
-    <dimen name="profile_avatar_margin_top">15dp</dimen>
-    <dimen name="profile_avatar_margin_l_r">123dp</dimen>
-    <dimen name="profile_avatar_size">115dp</dimen>
-    <dimen name="profile_avatar_padding">6dp</dimen>
-    <dimen name="fab_load_size">30dp</dimen>
-    <dimen name="fab_load_margin_top">102dp</dimen>
-    <dimen name="fab_load_margin_bottom">37dp</dimen>
-    <dimen name="fab_load_margin_left">79dp</dimen>
-    <dimen name="fab_load_margin_right">128dp</dimen>
-    <dimen name="list_height">160dp</dimen>
-    <dimen name="list_margin_l_r">10dp</dimen>
-    <dimen name="list_margin_top">20dp</dimen>
-    <dimen name="list_single_text_size">12sp</dimen>
-    <dimen name="list_double_header_text_size">8sp</dimen>
-    <dimen name="list_double_value_text_size">12sp</dimen>
-    <dimen name="list_double_item_height">45dp</dimen>
-    <dimen name="list_double_item_margin_top">7dp</dimen>
-    <dimen name="list_double_item_margin_bottom">4dp</dimen>
-
-
-    <!-- Screen Authorization dimens -->
-
-    <dimen name="logo_height">43dp</dimen>
-    <dimen name="logo_width">180dp</dimen>
-    <dimen name="logo_textSize">36sp</dimen>
-    <dimen name="logo_margin_top">228dp</dimen>
-    <dimen name="logo_margin_left">85dp</dimen>
-    <dimen name="logo_margin_right">98dp</dimen>
-    <dimen name="button_height">40dp</dimen>
-    <dimen name="button_width">320dp</dimen>
-    <dimen name="button_textSize">14sp</dimen>
-    <dimen name="button_margin_left">20dp</dimen>
-    <dimen name="button_margin_top">36dp</dimen>
-
-    <!-- Screen Posts dimens -->
-
-    <dimen name="post_card_width">340dp</dimen>
-    <dimen name="post_card_height">294dp</dimen>
-    <dimen name="post_avatar_size">40dp</dimen>
-    <dimen name="post_avatar_margin">20dp</dimen>
-    <dimen name="user_textSize">12sp</dimen>
-    <dimen name="post_time_textSize">8sp</dimen>
-    <dimen name="post_header_textSize">16sp</dimen>
-    <dimen name="post_image_width">320dp</dimen>
-    <dimen name="post_image_height">160dp</dimen>
-    <dimen name="post_image_margin_left_right">10dp</dimen>
-    <dimen name="post_image_margin_top">25dp</dimen>
-    <dimen name="post_header_height">24dp</dimen>
-    <dimen name="post_header_margin">20dp</dimen>
-    <dimen name="user_margin_left">20dp</dimen>
-    <dimen name="user_margin_top">26dp</dimen>
-    <dimen name="user_margin_right">167dp</dimen>
-    <dimen name="button_settings_width">4dp</dimen>
-    <dimen name="button_settings_height">16dp</dimen>
-    <dimen name="button_settings_margin_left">143dp</dimen>
-    <dimen name="button_settings_margin_right">20dp</dimen>
-    <dimen name="button_settings_margin_top">32dp</dimen>
-    <dimen name="time_width">55dp</dimen>
-    <dimen name="time_height">10dp</dimen>
-    <dimen name="time_margin_left">20dp</dimen>
-    <dimen name="time_margin_right">205dp</dimen>
-    <dimen name="time_margin_top">4dp</dimen>
-
-
-    <!--Screen labels dimens -->
-
-    <dimen name="label_size">7dp</dimen>
-    <dimen name="label_margin_top">19dp</dimen>
-    <dimen name="label_margin_left">12dp</dimen>
-    <dimen name="label_header_text_size">12sp</dimen>
-    <dimen name="label_header_height">14sp</dimen>
-    <dimen name="label_header_margin_left">13dp</dimen>
-    <dimen name="label_header_margin_top">16dp</dimen>
-    <dimen name="label_header_margin_bottom">13dp</dimen>
-    <dimen name="fab_send_margin_top">457dp</dimen>
-    <dimen name="fab_send_margin_left">290dp</dimen>
-    <dimen name="categ_margin_left">16dp</dimen>
-    <dimen name="categ_margin_top">18dp</dimen>
-    <dimen name="categ_textsize">12sp</dimen>
-    <dimen name="categ_height">17sp</dimen>
-    <dimen name="viewheader_margin_left">16dp</dimen>
-    <dimen name="viewheader_margin_top">6dp</dimen>
-    <dimen name="viewheader_textsize">27sp</dimen>
-    <dimen name="icon_time_size">6dp</dimen>
-    <dimen name="header_margin_bottom">25dp</dimen>
-    <dimen name="icon_time_margin_left">19dp</dimen>
-    <dimen name="text_time_margin_top">6dp</dimen>
-    <dimen name="text_time_margin_left">6dp</dimen>
-    <dimen name="icon_time_margin_top">10dp</dimen>
-    <dimen name="text_time_textsize">9sp</dimen>
-    <dimen name="image_postview_height">210dp</dimen>
-    <dimen name="image_postview_width">360dp</dimen>
-    <dimen name="image_postview_margin_top">10dp</dimen>
-    <dimen name="small_tag_height">12dp</dimen>
-    <dimen name="small_tag_width">26dp</dimen>
-    <dimen name="big_tag_width">57dp</dimen>
-    <dimen name="big_tag_height">12dp</dimen>
-    <dimen name="tag_textsize">8sp</dimen>
-    <dimen name="tag1_margin_left">16dp</dimen>
-    <dimen name="tag2_margin_left">5dp</dimen>
-    <dimen name="bigtag_margin_left">5dp</dimen>
-    <dimen name="smalltag_margin_top">20dp</dimen>
-    <dimen name="avatar_postview_size">28dp</dimen>
-    <dimen name="avatar_postview_margin_left_top">16dp</dimen>
-    <dimen name="avtor_textsize">12sp</dimen>
-    <dimen name="avtor_height">15sp</dimen>
-    <dimen name="avtor_margin_left">12dp</dimen>
-    <dimen name="avtor_margin_top">16dp</dimen>
-    <dimen name="blogname_textsize">10sp</dimen>
-    <dimen name="content_margin_top">19dp</dimen>
-    <dimen name="content_width">328dp</dimen>
-    <dimen name="content_margin_l_r">16dp</dimen>
-    <dimen name="layout_padding">2dp</dimen>
-    <dimen name="content_textsize">13sp</dimen>
-    <dimen name="button_comments_height">36dp</dimen>
-    <dimen name="button_comments_width">320dp</dimen>
-    <dimen name="button_comments_textsize">12sp</dimen>
-    <dimen name="button_comments_margin_left_right">20dp</dimen>
-    <dimen name="button_comments_margin_top">10dp</dimen>
 
 
 </resources>

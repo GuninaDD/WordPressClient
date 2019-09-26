@@ -2,54 +2,36 @@
     <string name="app_name">WordPress Client</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
     <string name="menu_blogs">Мои Блоги</string>
     <string name="menu_categories">Категории</string>
     <string name="menu_labels">Метки</string>
     <string name="menu_favorites">Избранное</string>
     <string name="menu_bookmarks">Закладки</string>
     <string name="menu_exit">Выход</string>
-
     <string name="username">Вася Иванов</string>
-
     <string name="search">Поиск</string>
     <string name="blog_image_contentDescription">Обложка блога</string>
     <string name="blogHeader">Мой Блог</string>
-
     <string name="blogURL">myblog.wordpress.com</string>
-    <string name="open">open</string>
-    <string name="close">close</string>
     <string name="title_activity_profile">Мой профиль</string>
     <string name="profile_header">Мой профиль</string>
-
     <string name="profile_image">Изображение профиля</string>
     <string name="post_image">Обложка поста</string>
-
-
     <string name="logo_authorization">WordPress</string>
-
     <string name="button_login">Войти</string>
     <string name="button_notification">Зарегистрироваться</string>
     <string name="user1">Василий Петров</string>
-
     <string name="user2">Иван Иванов</string>
     <string name="time1">Сегодня, 13:45</string>
     <string name="time2">Вчера, 13:45</string>
     <string name="post_header">Заголовок поста</string>
     <string name="label">Метка</string>
-
-
     <string name="share">Поделиться</string>
-
     <string name="to_bookmarks">Добавить в закладки</string>
     <string name="settings_postsview">Настройки</string>
     <string name="postsview_header">Заголовок поста</string>
     <string name="categories_viewpost">Категория</string>
-
     <string name="header_viewpost">Заголовок поста</string>
     <string name="date_post_publication">Дата создания</string>
     <string name="tag1">Тэг 1</string>

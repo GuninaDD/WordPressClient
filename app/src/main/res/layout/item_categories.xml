@@ -5,24 +5,24 @@
 
     <TextView
         android:id="@+id/tv_categorieheader"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/categories_header_margin_left"
-        android:layout_marginTop="@dimen/categories_header_margin_top"
-        android:layout_marginBottom="@dimen/categories_header_margin_bottom"
+        android:layout_marginStart="@dimen/spacing_xxsmall"
+        android:layout_marginLeft="@dimen/spacing_xxsmall"
+        android:layout_marginTop="@dimen/spacing_xxsmall"
+        android:layout_marginBottom="@dimen/spacing_xxsmall"
         android:text="@string/categorie_name"
         android:textColor="@color/colorHeaders"
-        android:textSize="@dimen/categories_header_textSize"
-        android:layout_marginStart="@dimen/categories_header_margin_left" />
+        android:textSize="@dimen/textsize_small" />
 
     <TextView
         android:id="@+id/tv_categoriedescription"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/categories_header_margin_left"
-        android:layout_marginBottom="@dimen/categories_header_margin_bottom"
+        android:layout_marginStart="@dimen/spacing_xxsmall"
+        android:layout_marginLeft="@dimen/spacing_xxsmall"
+        android:layout_marginBottom="@dimen/spacing_xxsmall"
         android:text="@string/categorie_description"
         android:textColor="@color/colorBlogURLandTime"
-        android:textSize="@dimen/categories_description_textSize"
-        android:layout_marginStart="@dimen/categories_header_margin_left" />
+        android:textSize="@dimen/textsize_xsmall" />
 </LinearLayout>
