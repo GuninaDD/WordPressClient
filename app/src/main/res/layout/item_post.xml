@@ -2,10 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_postitem"
         android:layout_width="@dimen/post_card_width"
         android:layout_height="@dimen/post_card_height"
         android:layout_gravity="center_horizontal">
@@ -15,7 +17,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/post_settings_button"
+                android:id="@+id/btn_postsettings"
                 android:layout_width="@dimen/button_settings_width"
                 android:layout_height="@dimen/button_settings_height"
                 android:layout_marginStart="@dimen/button_settings_margin_left"
@@ -27,12 +29,12 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/posts_username_textView"
+                app:layout_constraintStart_toEndOf="@+id/tv_postusername"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
-                android:id="@+id/post_user_image"
+                android:id="@+id/iv_postuser"
                 android:layout_width="@dimen/post_avatar_size"
                 android:layout_height="@dimen/post_avatar_size"
                 android:layout_marginStart="@dimen/post_avatar_margin"
@@ -50,7 +52,7 @@
                 app:srcCompat="@drawable/profile_avatar" />
 
             <ImageView
-                android:id="@+id/post_label_image"
+                android:id="@+id/iv_postimage"
                 android:layout_width="@dimen/post_image_width"
                 android:layout_height="@dimen/post_image_height"
                 android:layout_marginStart="@dimen/post_image_margin_left_right"
@@ -63,12 +65,12 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/posts_time_textView"
+                app:layout_constraintTop_toBottomOf="@+id/tv_publicationtime"
                 app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/post_label" />
 
             <TextView
-                android:id="@+id/posts_time_textView"
+                android:id="@+id/tv_publicationtime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/time_margin_left"
@@ -82,12 +84,12 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/post_user_image"
-                app:layout_constraintTop_toBottomOf="@+id/posts_username_textView"
+                app:layout_constraintStart_toEndOf="@+id/iv_postuser"
+                app:layout_constraintTop_toBottomOf="@+id/tv_postusername"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/posts_username_textView"
+                android:id="@+id/tv_postusername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/user_margin_left"
@@ -101,12 +103,12 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/post_user_image"
+                app:layout_constraintStart_toEndOf="@+id/iv_postuser"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/post_header_textView"
+                android:id="@+id/tv_postheader"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/post_header_height"
                 android:layout_marginStart="@dimen/post_header_margin"
@@ -121,7 +123,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/post_label_image"
+                app:layout_constraintTop_toBottomOf="@+id/iv_postimage"
                 app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

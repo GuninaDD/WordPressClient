@@ -7,29 +7,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:id="@+id/container_profilecard"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginStart="@dimen/list_margin_l_r"
+        android:layout_marginLeft="@dimen/list_margin_l_r"
+        android:layout_marginTop="@dimen/list_margin_top"
+        android:layout_marginEnd="@dimen/list_margin_l_r"
+        android:layout_marginRight="@dimen/list_margin_l_r"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/iv_useravatar"
+        app:layout_constraintVertical_bias="0.0">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:fitsSystemWindows="true"
-            android:minHeight="?attr/actionBarSize"
-
-            app:title="@string/profile_header" />
-
-    </com.google.android.material.appbar.AppBarLayout>
+    </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_useravatar"
         android:layout_width="@dimen/profile_avatar_size"
         android:layout_height="@dimen/profile_avatar_size"
         android:layout_marginLeft="@dimen/profile_avatar_margin_l_r"
@@ -47,7 +44,7 @@
         tools:srcCompat="@drawable/profile_avatar" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imgbtn_loaduseravatar"
         android:layout_width="@dimen/fab_load_size"
         android:layout_height="@dimen/fab_load_size"
         android:layout_marginStart="@dimen/fab_load_margin_left"
@@ -60,28 +57,31 @@
         app:layout_constraintBottom_toTopOf="@id/appbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/iv_useravatar"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@mipmap/ic_load_avatar" />
 
-    <FrameLayout
-        android:id="@+id/profile_card_container"
-        android:layout_width="0dp"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/list_margin_l_r"
-        android:layout_marginLeft="@dimen/list_margin_l_r"
-        android:layout_marginTop="@dimen/list_margin_top"
-        android:layout_marginEnd="@dimen/list_margin_l_r"
-        android:layout_marginRight="@dimen/list_margin_l_r"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
-    </FrameLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+
+            app:title="@string/profile_header" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

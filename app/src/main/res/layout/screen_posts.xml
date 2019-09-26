@@ -5,25 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/fab_send_margin_left"
-        android:layout_marginLeft="@dimen/fab_send_margin_left"
-        android:layout_marginTop="@dimen/fab_send_margin_top"
-        android:clickable="true"
-        app:backgroundTint="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623"
-        app:srcCompat="@mipmap/ic_add" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_posts"
+        android:id="@+id/rv_posts"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,4 +15,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_send_margin_left"
+        android:layout_marginLeft="@dimen/fab_send_margin_left"
+        android:layout_marginTop="@dimen/fab_send_margin_top"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623"
+        app:srcCompat="@mipmap/ic_add" />
 </androidx.constraintlayout.widget.ConstraintLayout>

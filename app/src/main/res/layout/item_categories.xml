@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_categorieheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/categories_header_margin_left"
+        android:layout_marginTop="@dimen/categories_header_margin_top"
+        android:layout_marginBottom="@dimen/categories_header_margin_bottom"
+        android:text="@string/categorie_name"
+        android:textColor="@color/colorHeaders"
+        android:textSize="@dimen/categories_header_textSize"
+        android:layout_marginStart="@dimen/categories_header_margin_left" />
+
+    <TextView
+        android:id="@+id/tv_categoriedescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/categories_header_margin_left"
+        android:layout_marginBottom="@dimen/categories_header_margin_bottom"
+        android:text="@string/categorie_description"
+        android:textColor="@color/colorBlogURLandTime"
+        android:textSize="@dimen/categories_description_textSize"
+        android:layout_marginStart="@dimen/categories_header_margin_left" />
+</LinearLayout>

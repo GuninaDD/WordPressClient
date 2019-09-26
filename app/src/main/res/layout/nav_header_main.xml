@@ -13,7 +13,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageButton
-        android:id="@+id/imageButton_avatar"
+        android:id="@+id/imgbtn_menuavatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="@dimen/avatar_size"
         android:layout_marginStart="@dimen/avatar_margin_left"
@@ -34,25 +34,6 @@
         app:layout_constraintVertical_bias="0.0"
         tools:src="@drawable/avatar_astronaut" />
 
-    <TextView
-        android:id="@+id/textView_userName"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/username_height"
-        android:layout_marginStart="@dimen/username_margin_left"
-        android:layout_marginLeft="@dimen/username_margin_left"
-        android:layout_marginTop="@dimen/username_margin_top"
-
-        android:text="@string/username"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/username_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton_avatar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <Spinner
         android:id="@+id/spinner_email"
         android:layout_width="wrap_content"
@@ -66,7 +47,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_userName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/username_height"
+        android:layout_marginStart="@dimen/username_margin_left"
+        android:layout_marginLeft="@dimen/username_margin_left"
+        android:layout_marginTop="@dimen/username_margin_top"
+
+        android:text="@string/username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/username_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_menuavatar"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

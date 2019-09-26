@@ -20,7 +20,7 @@ public class FavoritesFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-       favoritesViewModel =
+        favoritesViewModel =
                 ViewModelProviders.of(this).get(FavoritesViewModel.class);
         View root = inflater.inflate(R.layout.screen_favorites, container, false);
 

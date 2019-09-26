@@ -2,9 +2,9 @@ package com.simbirsoft.wordpressclient.ui.posts;
 
 public class Posts {
 
-  int avatar;
-  int label;
-  String header;
+    int avatar;
+    int label;
+    String header;
     String username;
     String date_time;
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WordPressClient</string>
+    <string name="app_name">WordPress Client</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -40,20 +40,16 @@
     <string name="time1">Сегодня, 13:45</string>
     <string name="time2">Вчера, 13:45</string>
     <string name="post_header">Заголовок поста</string>
-    <string-array name="email_list">
-        <item>heyfromsteph@gmail.com</item>
-        <item>heyfromsteph1@gmail.com</item>
-    </string-array>
+    <string name="label">Метка</string>
 
-
-<string name="label">Метка</string>
 
     <string name="share">Поделиться</string>
+
     <string name="to_bookmarks">Добавить в закладки</string>
     <string name="settings_postsview">Настройки</string>
     <string name="postsview_header">Заголовок поста</string>
-
     <string name="categories_viewpost">Категория</string>
+
     <string name="header_viewpost">Заголовок поста</string>
     <string name="date_post_publication">Дата создания</string>
     <string name="tag1">Тэг 1</string>
@@ -67,11 +63,17 @@
         There is no staying in any one place; for at one and the same time everything has to be done everywhere.
         It is much the same with him who endeavors the description of the scene.
         We must now retrace our way a little.</string>
-<string name="button_comments">12 комментариев</string>
-<string name="ico_time">Время публикации</string>
+    <string name="button_comments">12 комментариев</string>
+    <string name="ico_time">Время публикации</string>
     <string name="postview_image">Обложка просматриваемого поста</string>
     <string name="avatar_postview">Изображение профиля</string>
     <string name="hint">Контент</string>
+    <string name="categorie_name">Категория</string>
+    <string name="categorie_description">Описание категории</string>
+    <string-array name="email_list">
+        <item>heyfromsteph@gmail.com</item>
+        <item>heyfromsteph1@gmail.com</item>
+    </string-array>
 
 
 </resources>

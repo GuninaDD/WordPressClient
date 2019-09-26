@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2006 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2006 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -25,7 +24,7 @@
     android:paddingRight="?attr/listPreferredItemPaddingRight">
 
     <TextView
-        android:id="@+id/profile_headers"
+        android:id="@+id/tv_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/list_double_item_margin_top"
@@ -35,12 +34,12 @@
         android:textSize="@dimen/list_double_header_text_size" />
 
     <TextView
-        android:id="@+id/profile_values"
+        android:id="@+id/tv_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profile_headers"
-        android:layout_alignStart="@id/profile_headers"
-        android:layout_alignLeft="@id/profile_headers"
+        android:layout_below="@id/tv_header"
+        android:layout_alignStart="@id/tv_header"
+        android:layout_alignLeft="@id/tv_header"
         android:layout_marginBottom="@dimen/list_double_item_margin_bottom"
         android:textAppearance="?attr/textAppearanceListItemSecondary"
         android:textColor="@color/colorBlack"

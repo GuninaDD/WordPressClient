@@ -11,14 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.simbirsoft.wordpressclient.R;
-import com.simbirsoft.wordpressclient.ui.blogs.Blogs;
-import com.simbirsoft.wordpressclient.ui.blogs.BlogsAdapter;
 
 import java.util.List;
 
 public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHolder> {
-
-
 
     private Context mCtx;
     private List<Posts> postsList;
@@ -32,7 +28,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
     @Override
     public PostsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.list_post, null);
+        View view = inflater.inflate(R.layout.item_post, null);
         return new PostsAdapter.PostsViewHolder(view);
     }
 
@@ -45,13 +41,6 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
         holder.postHeader.setText(posts.getHeader());
         holder.postUsername.setText(posts.getUsername());
         holder.post_date_time.setText(posts.getDate_time());
-
-
-        /*  this.avatar = avatar;
-        this.label = label;
-        this.header = header;
-        this.username = username;
-        this.date_time = date_time;*/
     }
 
     @Override
@@ -59,19 +48,16 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
         return postsList.size();
     }
 
-    class PostsViewHolder extends RecyclerView.ViewHolder
-{
-    ImageView postAvatar, postImage;
-    TextView postLabel, postHeader, postUsername, post_date_time;
-    public PostsViewHolder(@NonNull View itemView) {
-        super(itemView);
+    class PostsViewHolder extends RecyclerView.ViewHolder {
+        ImageView postAvatar, postImage;
+        TextView postLabel, postHeader, postUsername, post_date_time;
+
+        public PostsViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+        }
 
     }
-
-
-}
-
-
 
 }
 

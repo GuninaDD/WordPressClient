@@ -11,7 +11,6 @@ public class Blogs {
     private int image;
     private String header, URL;
 
-
     public int getImage() {
         return image;
     }
