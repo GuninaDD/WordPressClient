@@ -21,18 +21,18 @@ import java.util.List;
 
 public class CategoriesFragment extends Fragment {
 
+    private CategoriesViewModel categoriesViewModel;
+
     RecyclerView recyclerView;
     CategoriesAdapter categoriesAdapter;
     List<Categories> categoriesList;
 
-    private CategoriesViewModel categoriesViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        categoriesList = new ArrayList<>();
         categoriesViewModel =
                 ViewModelProviders.of(this).get(CategoriesViewModel.class);
         View root = inflater.inflate(R.layout.screen_categories, container, false);
-
 
         recyclerView = root.findViewById(R.id.rv_categories);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));

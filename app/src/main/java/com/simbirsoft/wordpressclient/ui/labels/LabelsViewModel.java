@@ -9,8 +9,7 @@ public class LabelsViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public LabelsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+
     }
 
     public LiveData<String> getText() {

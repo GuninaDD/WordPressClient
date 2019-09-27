@@ -17,17 +17,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.simbirsoft.wordpressclient.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LabelsFragment extends Fragment {
 
+    private LabelsViewModel labelsViewModel;
+
     RecyclerView recyclerView;
     LabelsAdapter labelsAdapter;
     List<Labels> labelsList;
-    private LabelsViewModel labelsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        labelsList = new ArrayList<>();
         labelsViewModel =
                 ViewModelProviders.of(this).get(LabelsViewModel.class);
         View root = inflater.inflate(R.layout.screen_labels, container, false);

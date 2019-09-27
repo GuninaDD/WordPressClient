@@ -25,9 +25,13 @@
     <dimen name="spacing_xlarge">35dp</dimen>
     <dimen name="spacing_xxlarge">40dp</dimen>
     <dimen name="spacing_xxxlarge">50dp</dimen>
+    <dimen name="spacing_imgbtn_loaduseravatar_left">80dp</dimen>
     <dimen name="spacing_logo_left">85dp</dimen>
     <dimen name="spacing_username_left">90dp</dimen>
     <dimen name="spacing_logo_right">100dp</dimen>
+    <dimen name="spacing_imgbtn_loaduseravatar_top">105dp</dimen>
+    <dimen name="spacing_useravatar_vertical">125dp</dimen>
+    <dimen name="spacing_imgbtn_loaduseravatar_right">130dp</dimen>
     <dimen name="spacing_btnsettings_left">145dp</dimen>
     <dimen name="spacing_time_right">205dp</dimen>
     <dimen name="spacing_logo_top">230dp</dimen>
@@ -40,10 +44,12 @@
     <dimen name="width_smalltag">26dp</dimen>
     <dimen name="size_iv_userimage">28dp</dimen>
     <dimen name="size_btn_postsettings">30dp</dimen>
+    <dimen name="size_imgbtn_loaduseravatar">30dp</dimen>
     <dimen name="size_iv_postuser">40dp</dimen>
     <dimen name="height_btn">40dp</dimen>
     <dimen name="width_bigtag">57dp</dimen>
     <dimen name="size_imgbtn_menuavatar">60dp</dimen>
+    <dimen name="size_iv_useravatar">115dp</dimen>
     <dimen name="height_nav_header">176dp</dimen>
     <dimen name="width_btn">320dp</dimen>
 

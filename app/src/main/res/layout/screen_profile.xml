@@ -7,34 +7,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/container_profilecard"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/list_margin_l_r"
-        android:layout_marginLeft="@dimen/list_margin_l_r"
-        android:layout_marginTop="@dimen/list_margin_top"
-        android:layout_marginEnd="@dimen/list_margin_l_r"
-        android:layout_marginRight="@dimen/list_margin_l_r"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_useravatar"
-        app:layout_constraintVertical_bias="0.0">
-
-    </FrameLayout>
-
     <ImageView
         android:id="@+id/iv_useravatar"
-        android:layout_width="@dimen/profile_avatar_size"
-        android:layout_height="@dimen/profile_avatar_size"
-        android:layout_marginLeft="@dimen/profile_avatar_margin_l_r"
-        android:layout_marginTop="@dimen/profile_avatar_margin_top"
-        android:layout_marginRight="@dimen/profile_avatar_margin_l_r"
+        android:layout_width="@dimen/size_iv_useravatar"
+        android:layout_height="@dimen/size_iv_useravatar"
+        android:layout_marginLeft="@dimen/spacing_useravatar_vertical"
+        android:layout_marginTop="@dimen/spacing_xsmall"
+        android:layout_marginRight="@dimen/spacing_useravatar_vertical"
         android:background="@drawable/profile_avatar_bg"
         android:contentDescription="@string/profile_image"
-        android:padding="@dimen/profile_avatar_padding"
+        android:padding="@dimen/spacing_xxxsmall"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +27,13 @@
 
     <ImageButton
         android:id="@+id/imgbtn_loaduseravatar"
-        android:layout_width="@dimen/fab_load_size"
-        android:layout_height="@dimen/fab_load_size"
-        android:layout_marginStart="@dimen/fab_load_margin_left"
-        android:layout_marginLeft="@dimen/fab_load_margin_left"
-        android:layout_marginTop="@dimen/fab_load_margin_top"
-        android:layout_marginEnd="@dimen/fab_load_margin_right"
-        android:layout_marginRight="@dimen/fab_load_margin_right"
+        android:layout_width="@dimen/size_imgbtn_loaduseravatar"
+        android:layout_height="@dimen/size_imgbtn_loaduseravatar"
+        android:layout_marginStart="@dimen/spacing_imgbtn_loaduseravatar_left"
+        android:layout_marginLeft="@dimen/spacing_imgbtn_loaduseravatar_left"
+        android:layout_marginTop="@dimen/spacing_imgbtn_loaduseravatar_top"
+        android:layout_marginEnd="@dimen/spacing_imgbtn_loaduseravatar_right"
+        android:layout_marginRight="@dimen/spacing_imgbtn_loaduseravatar_right"
         android:background="@drawable/profile_avatar_bg"
         android:contentDescription="@string/profile_image"
         app:layout_constraintBottom_toTopOf="@id/appbar"
@@ -61,6 +43,99 @@
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@mipmap/ic_load_avatar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xxsmall"
+        android:layout_marginLeft="@dimen/spacing_xxsmall"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_xxsmall"
+        android:layout_marginRight="@dimen/spacing_xxsmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_useravatar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHeaders"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="@dimen/textsize_large" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/surname"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHeaders"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="@dimen/textsize_large" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_viewname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_viewname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/viewname"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHeaders"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="@dimen/textsize_large" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_aboutuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_aboutuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/aboutuser"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHeaders"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="@dimen/textsize_large" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"

@@ -52,6 +52,10 @@
     <string name="hint">Контент</string>
     <string name="categorie_name">Категория</string>
     <string name="categorie_description">Описание категории</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="viewname">Отображаемое для всех имя</string>
+    <string name="aboutuser">Обо мне</string>
     <string-array name="email_list">
         <item>heyfromsteph@gmail.com</item>
         <item>heyfromsteph1@gmail.com</item>

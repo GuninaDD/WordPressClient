@@ -17,13 +17,13 @@ import java.util.List;
 public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.LabelsViewHolder> {
 
     private Context mCtx;
+    private List<Labels> labelsList;
 
     public LabelsAdapter(Context mCtx, List<Labels> labelsList) {
         this.mCtx = mCtx;
         this.labelsList = labelsList;
     }
 
-    private List<Labels> labelsList;
 
     @NonNull
     @Override
@@ -43,7 +43,7 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.LabelsView
 
     @Override
     public int getItemCount() {
-        return 0;
+        return labelsList.size();
     }
 
     class LabelsViewHolder extends RecyclerView.ViewHolder {

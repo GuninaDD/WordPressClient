@@ -9,8 +9,7 @@ public class BlogsViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public BlogsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+
     }
 
     public LiveData<String> getText() {

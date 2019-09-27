@@ -9,8 +9,7 @@ public class BookmarksViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public BookmarksViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+
     }
 
     public LiveData<String> getText() {
