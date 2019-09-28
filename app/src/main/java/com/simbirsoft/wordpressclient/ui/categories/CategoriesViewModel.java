@@ -8,11 +8,7 @@ public class CategoriesViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public CategoriesViewModel() {
-
-    }
-
-    public LiveData<String> getText() {
+       public LiveData<String> getText() {
         return mText;
     }
 }

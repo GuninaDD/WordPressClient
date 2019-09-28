@@ -1,26 +1,26 @@
 package com.simbirsoft.wordpressclient.ui.favorites;
 
-public class Favorites {
+class Favorites {
     private int image;
     private String header;
-    private String URL;
+    private String favoritesURL;
 
-    public Favorites(int image, String header, String URL) {
+    Favorites(int image, String header, String favoritesURL) {
         this.image = image;
         this.header = header;
-        this.URL = URL;
+        this.favoritesURL = favoritesURL;
     }
 
-    public int getImage() {
+    int getImage() {
         return image;
     }
 
-    public String getHeader() {
+    String getHeader() {
         return header;
     }
 
-    public String getURL() {
-        return URL;
+    String getURL() {
+        return favoritesURL;
     }
 
 

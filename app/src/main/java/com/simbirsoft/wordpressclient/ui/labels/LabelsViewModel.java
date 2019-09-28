@@ -8,10 +8,6 @@ public class LabelsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public LabelsViewModel() {
-
-    }
-
     public LiveData<String> getText() {
         return mText;
     }

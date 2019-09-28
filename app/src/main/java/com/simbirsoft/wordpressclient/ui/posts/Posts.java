@@ -1,39 +1,39 @@
 package com.simbirsoft.wordpressclient.ui.posts;
 
-public class Posts {
+class Posts {
 
-    int avatar;
-    int label;
-    String header;
-    String username;
-    String date_time;
+    private int avatar;
+    private int label;
+    private String header;
+    private String username;
+    private String publication;
 
-    public Posts(int avatar, int label, String header, String username, String date_time) {
+    Posts(int avatar, int label, String header, String username, String publication) {
         this.avatar = avatar;
         this.label = label;
         this.header = header;
         this.username = username;
-        this.date_time = date_time;
+        this.publication = publication;
     }
 
 
-    public int getAvatar() {
+    int getAvatar() {
         return avatar;
     }
 
-    public int getLabel() {
+    int getLabel() {
         return label;
     }
 
-    public String getHeader() {
+    String getHeader() {
         return header;
     }
 
-    public String getUsername() {
+    String getUsername() {
         return username;
     }
 
-    public String getDate_time() {
-        return date_time;
+    String getPublication() {
+        return publication;
     }
 }

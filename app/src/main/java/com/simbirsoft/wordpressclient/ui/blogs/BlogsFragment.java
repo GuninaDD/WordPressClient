@@ -18,7 +18,7 @@ import java.util.List;
 
 public class BlogsFragment extends Fragment {
 
-    private BlogsViewModel blogsViewModel;
+    BlogsViewModel blogsViewModel;
 
     RecyclerView recyclerView;
     BlogsAdapter blogsAdapter;

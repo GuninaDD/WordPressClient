@@ -1,5 +1,6 @@
 package com.simbirsoft.wordpressclient.ui.bookmarks;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
     private Context mCtx;
     private List<Bookmarks> bookmarksList;
 
-    public BookmarksAdapter(Context mCtx, List<Bookmarks> bookmarksList) {
+    BookmarksAdapter(Context mCtx, List<Bookmarks> bookmarksList) {
         this.mCtx = mCtx;
         this.bookmarksList = bookmarksList;
     }
@@ -29,7 +30,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
     @Override
     public BookmarksViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.item_blogs, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.item_blogs, null);
         return new BookmarksAdapter.BookmarksViewHolder(view);
 
     }
@@ -52,7 +53,7 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
         ImageView imageView;
         TextView blogHeader, blogURL;
 
-        public BookmarksViewHolder(@NonNull View itemView) {
+        BookmarksViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.iv_blogimage);
             blogHeader = itemView.findViewById(R.id.tv_blogheader);

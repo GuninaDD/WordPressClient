@@ -1,26 +1,26 @@
 package com.simbirsoft.wordpressclient.ui.bookmarks;
 
-public class Bookmarks {
+class Bookmarks {
     private int image;
 
-    public Bookmarks(int image, String header, String URL) {
+    public Bookmarks(int image, String header, String bookmarksURL) {
         this.image = image;
         this.header = header;
-        this.URL = URL;
+        this.bookmarksURL = bookmarksURL;
     }
 
     private String header;
-    private String URL;
+    private String bookmarksURL;
 
-    public int getImage() {
+    int getImage() {
         return image;
     }
 
-    public String getHeader() {
+    String getHeader() {
         return header;
     }
 
-    public String getURL() {
-        return URL;
+    String getURL() {
+        return bookmarksURL;
     }
 }

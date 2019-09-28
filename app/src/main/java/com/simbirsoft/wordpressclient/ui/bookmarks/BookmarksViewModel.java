@@ -8,10 +8,6 @@ public class BookmarksViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public BookmarksViewModel() {
-
-    }
-
     public LiveData<String> getText() {
         return mText;
     }

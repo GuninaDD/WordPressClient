@@ -1,5 +1,6 @@
 package com.simbirsoft.wordpressclient.ui.blogs;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,7 @@ public class BlogsAdapter extends RecyclerView.Adapter<BlogsAdapter.BlogsViewHol
     private Context mCtx;
     private List<Blogs> blogsList;
 
-    public BlogsAdapter(Context mCtx, List<Blogs> blogsList) {
+    BlogsAdapter(Context mCtx, List<Blogs> blogsList) {
         this.mCtx = mCtx;
         this.blogsList = blogsList;
     }
@@ -29,7 +30,7 @@ public class BlogsAdapter extends RecyclerView.Adapter<BlogsAdapter.BlogsViewHol
     public BlogsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.item_blogs, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.item_blogs, null);
         return new BlogsViewHolder(view);
     }
 
@@ -52,7 +53,7 @@ public class BlogsAdapter extends RecyclerView.Adapter<BlogsAdapter.BlogsViewHol
         ImageView imageView;
         TextView blogHeader, blogURL;
 
-        public BlogsViewHolder(@NonNull View itemView) {
+        BlogsViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.iv_blogimage);

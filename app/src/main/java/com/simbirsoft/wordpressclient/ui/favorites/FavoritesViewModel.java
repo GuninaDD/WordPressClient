@@ -8,10 +8,6 @@ public class FavoritesViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public FavoritesViewModel() {
-
-    }
-
     public LiveData<String> getText() {
         return mText;
     }

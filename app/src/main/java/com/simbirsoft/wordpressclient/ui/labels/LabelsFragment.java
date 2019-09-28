@@ -4,10 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -22,7 +18,7 @@ import java.util.List;
 
 public class LabelsFragment extends Fragment {
 
-    private LabelsViewModel labelsViewModel;
+    LabelsViewModel labelsViewModel;
 
     RecyclerView recyclerView;
     LabelsAdapter labelsAdapter;

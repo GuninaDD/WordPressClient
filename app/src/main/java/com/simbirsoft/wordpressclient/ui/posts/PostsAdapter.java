@@ -1,5 +1,6 @@
 package com.simbirsoft.wordpressclient.ui.posts;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
     private Context mCtx;
     private List<Posts> postsList;
 
-    public PostsAdapter(Context mCtx, List<Posts> postsList) {
+    PostsAdapter(Context mCtx, List<Posts> postsList) {
         this.mCtx = mCtx;
         this.postsList = postsList;
     }
@@ -28,7 +29,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
     @Override
     public PostsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.item_post, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.item_post, null);
         return new PostsAdapter.PostsViewHolder(view);
     }
 
@@ -40,7 +41,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
         holder.postLabel.setText(posts.getLabel());
         holder.postHeader.setText(posts.getHeader());
         holder.postUsername.setText(posts.getUsername());
-        holder.post_date_time.setText(posts.getDate_time());
+        holder.publication.setText(posts.getPublication());
     }
 
     @Override
@@ -50,9 +51,9 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
 
     class PostsViewHolder extends RecyclerView.ViewHolder {
         ImageView postAvatar, postImage;
-        TextView postLabel, postHeader, postUsername, post_date_time;
+        TextView postLabel, postHeader, postUsername, publication;
 
-        public PostsViewHolder(@NonNull View itemView) {
+        PostsViewHolder(@NonNull View itemView) {
             super(itemView);
 
         }

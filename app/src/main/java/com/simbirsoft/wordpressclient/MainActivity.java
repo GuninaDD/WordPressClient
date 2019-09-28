@@ -30,21 +30,16 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.view.View;
-import android.widget.ImageButton;
+
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
     private AppBarConfiguration mAppBarConfiguration;
-    BlogsFragment blogsFragment;
-    CategoriesFragment categoriesFragment;
-    LabelsFragment labelsFragment;
-    FavoritesFragment favoritesFragment;
-    BookmarksFragment bookmarksFragment;
+
     DrawerLayout drawer;
-    private ActionBarDrawerToggle drawerToggle;
-    ImageButton imageButton;
-    Intent intent;
+
+
 
 
     @Override
@@ -85,7 +80,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -100,25 +94,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                drawer.openDrawer(GravityCompat.START);
-                return true;
+        if (item.getItemId() == android.R.id.home) {
+            drawer.openDrawer(GravityCompat.START);
+            return true;
+        } else {
+            drawer.openDrawer(GravityCompat.START);
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        Fragment fragment = null;
+        Fragment fragment;
 
         switch (item.getItemId()) {
-            case R.id.nav_blogs:
-                fragment = new BlogsFragment();
-                break;
 
             case R.id.nav_categories:
                 fragment = new CategoriesFragment();
@@ -150,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         setTitle(item.getTitle());
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

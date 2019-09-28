@@ -1,17 +1,17 @@
 package com.simbirsoft.wordpressclient.ui.labels;
 
-public class Labels {
+class Labels {
     private int image;
 
-    public int getImage() {
+    int getImage() {
         return image;
     }
 
-    public String getLabelHeader() {
+    String getLabelHeader() {
         return labelHeader;
     }
 
-    public Labels(int image, String labelHeader) {
+    Labels(int image, String labelHeader) {
         this.image = image;
         this.labelHeader = labelHeader;
     }

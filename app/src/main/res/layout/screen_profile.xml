@@ -34,8 +34,10 @@
         android:layout_marginTop="@dimen/spacing_imgbtn_loaduseravatar_top"
         android:layout_marginEnd="@dimen/spacing_imgbtn_loaduseravatar_right"
         android:layout_marginRight="@dimen/spacing_imgbtn_loaduseravatar_right"
+        android:adjustViewBounds="true"
         android:background="@drawable/profile_avatar_bg"
         android:contentDescription="@string/profile_image"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@id/appbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,7 +48,7 @@
 
     <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="@dimen/spacing_xxsmall"
         android:layout_marginLeft="@dimen/spacing_xxsmall"
         android:layout_marginTop="@dimen/spacing_small"

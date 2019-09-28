@@ -1,5 +1,6 @@
 package com.simbirsoft.wordpressclient.ui.favorites;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
     private Context mCtx;
     private List<Favorites> favoritesList;
 
-    public FavoritesAdapter(Context mCtx, List<Favorites> favoritesList) {
+    FavoritesAdapter(Context mCtx, List<Favorites> favoritesList) {
         this.mCtx = mCtx;
         this.favoritesList = favoritesList;
     }
@@ -31,7 +32,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
     @Override
     public FavoritesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.item_blogs, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.item_blogs, null);
         return new FavoritesViewHolder(view);
     }
 
@@ -53,7 +54,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
         ImageView imageView;
         TextView blogHeader, blogURL;
 
-        public FavoritesViewHolder(@NonNull View itemView) {
+        FavoritesViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.iv_blogimage);

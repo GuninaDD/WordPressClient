@@ -1,5 +1,6 @@
 package com.simbirsoft.wordpressclient.ui.labels;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,7 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.LabelsView
     private Context mCtx;
     private List<Labels> labelsList;
 
-    public LabelsAdapter(Context mCtx, List<Labels> labelsList) {
+    LabelsAdapter(Context mCtx, List<Labels> labelsList) {
         this.mCtx = mCtx;
         this.labelsList = labelsList;
     }
@@ -29,7 +30,7 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.LabelsView
     @Override
     public LabelsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.item_labels, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.item_labels, null);
         return new LabelsViewHolder(view);
     }
 
@@ -50,7 +51,7 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.LabelsView
         ImageView imageView;
         TextView labelHeader;
 
-        public LabelsViewHolder(@NonNull View itemView) {
+        LabelsViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.iv_labelcolor);

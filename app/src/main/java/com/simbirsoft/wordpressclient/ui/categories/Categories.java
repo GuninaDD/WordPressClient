@@ -1,8 +1,8 @@
 package com.simbirsoft.wordpressclient.ui.categories;
 
-public class Categories {
+class Categories {
 
-    public Categories(String categorie, String categorieDescription) {
+    Categories(String categorie, String categorieDescription) {
         this.categorie = categorie;
         this.categorieDescription = categorieDescription;
     }
@@ -10,11 +10,11 @@ public class Categories {
     private String categorie;
     private String categorieDescription;
 
-    public String getCategorie() {
+    String getCategorie() {
         return categorie;
     }
 
-    public String getCategorieDescription() {
+    String getCategorieDescription() {
         return categorieDescription;
     }
 

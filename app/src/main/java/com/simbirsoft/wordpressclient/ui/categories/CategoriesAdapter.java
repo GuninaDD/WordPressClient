@@ -1,10 +1,11 @@
 package com.simbirsoft.wordpressclient.ui.categories;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,12 +15,12 @@ import com.simbirsoft.wordpressclient.R;
 
 import java.util.List;
 
-public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>{
+public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder> {
 
     private Context mCtx;
     private List<Categories> categoriesList;
 
-    public CategoriesAdapter(Context mCtx, List<Categories> categoriesList) {
+    CategoriesAdapter(Context mCtx, List<Categories> categoriesList) {
         this.mCtx = mCtx;
         this.categoriesList = categoriesList;
     }
@@ -28,7 +29,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
     @Override
     public CategoriesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.item_categories, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.item_categories, null);
         return new CategoriesViewHolder(view);
     }
 
@@ -44,10 +45,10 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
         return categoriesList.size();
     }
 
-    class CategoriesViewHolder extends RecyclerView.ViewHolder{
+    class CategoriesViewHolder extends RecyclerView.ViewHolder {
         TextView header, description;
 
-        public CategoriesViewHolder(@NonNull View itemView) {
+        CategoriesViewHolder(@NonNull View itemView) {
             super(itemView);
 
             header = itemView.findViewById(R.id.tv_categorieheader);

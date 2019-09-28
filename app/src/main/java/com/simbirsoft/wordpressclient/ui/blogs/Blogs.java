@@ -1,25 +1,25 @@
 package com.simbirsoft.wordpressclient.ui.blogs;
 
-public class Blogs {
+class Blogs {
 
-    public Blogs(int image, String header, String URL) {
+    Blogs(int image, String header, String blogURL) {
         this.image = image;
         this.header = header;
-        this.URL = URL;
+        this.blogURL = blogURL;
     }
 
     private int image;
-    private String header, URL;
+    private String header, blogURL;
 
-    public int getImage() {
+    int getImage() {
         return image;
     }
 
-    public String getHeader() {
+    String getHeader() {
         return header;
     }
 
-    public String getURL() {
-        return URL;
+    String getURL() {
+        return blogURL;
     }
 }
