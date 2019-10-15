@@ -13,7 +13,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageButton
-        android:id="@+id/imgbtn_menuavatar"
+        android:id="@+id/ibtn_menu_avatar"
         android:layout_width="@dimen/size_imgbtn_menuavatar"
         android:layout_height="@dimen/size_imgbtn_menuavatar"
         android:layout_marginStart="@dimen/spacing_xsmall"
@@ -67,7 +67,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imgbtn_menuavatar"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_menu_avatar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 

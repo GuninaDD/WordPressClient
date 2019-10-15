@@ -50,8 +50,8 @@
     <string name="postview_image">Обложка просматриваемого поста</string>
     <string name="avatar_postview">Изображение профиля</string>
     <string name="hint">Контент</string>
-    <string name="categorie_name">Категория</string>
-    <string name="categorie_description">Описание категории</string>
+    <string name="category_name">Категория</string>
+    <string name="category_description">Описание категории</string>
     <string name="name">Имя</string>
     <string name="surname">Фамилия</string>
     <string name="viewname">Отображаемое для всех имя</string>
@@ -60,6 +60,11 @@
         <item>heyfromsteph@gmail.com</item>
         <item>heyfromsteph1@gmail.com</item>
     </string-array>
+    <string name="client_id">67107</string>
+    <string name="redirect_login">https://login.wordpress.org/?locale=ru_RU</string>
+    <string name="redirect_signin">https://wordpress.com/start/user/ru?ref=logged-out-homepage-lp</string>
+    <string name="baseURL">https://public-api.wordpress.com/oauth2/authorize</string>
+    <string name="get_user_info_url">https://public-api.wordpress.com/oauth2/token</string>
 
 
 </resources>

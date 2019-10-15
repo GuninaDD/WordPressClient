@@ -35,11 +35,5 @@
         android:label="@string/menu_bookmarks"
         tools:layout="@layout/screen_bookmarks" />
 
-    <fragment
-        android:id="@+id/nav_exit"
-        android:name="com.simbirsoft.wordpressclient.ui.bookmarks.BookmarksFragment"
-        android:label="@string/menu_exit"
-        tools:layout="@layout/screen_exit" />
-
 
 </navigation>

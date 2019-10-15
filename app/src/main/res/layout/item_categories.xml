@@ -4,25 +4,25 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_categorieheader"
+        android:id="@+id/tv_category_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_xxsmall"
         android:layout_marginLeft="@dimen/spacing_xxsmall"
         android:layout_marginTop="@dimen/spacing_xxsmall"
         android:layout_marginBottom="@dimen/spacing_xxsmall"
-        android:text="@string/categorie_name"
+        android:text="@string/category_name"
         android:textColor="@color/colorHeaders"
         android:textSize="@dimen/textsize_small" />
 
     <TextView
-        android:id="@+id/tv_categoriedescription"
+        android:id="@+id/tv_category_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_xxsmall"
         android:layout_marginLeft="@dimen/spacing_xxsmall"
         android:layout_marginBottom="@dimen/spacing_xxsmall"
-        android:text="@string/categorie_description"
+        android:text="@string/category_description"
         android:textColor="@color/colorBlogURLandTime"
         android:textSize="@dimen/textsize_xsmall" />
 </LinearLayout>

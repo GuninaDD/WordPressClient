@@ -54,8 +54,8 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.LabelsView
         LabelsViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            imageView = itemView.findViewById(R.id.iv_labelcolor);
-            labelHeader = itemView.findViewById(R.id.tv_labelheader);
+            imageView = itemView.findViewById(R.id.iv_label_color);
+            labelHeader = itemView.findViewById(R.id.tv_label_header);
         }
     }
 }

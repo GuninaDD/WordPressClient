@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/iv_useravatar"
+        android:id="@+id/iv_avatar"
         android:layout_width="@dimen/size_iv_useravatar"
         android:layout_height="@dimen/size_iv_useravatar"
         android:layout_marginLeft="@dimen/spacing_useravatar_vertical"
@@ -26,7 +26,7 @@
         tools:srcCompat="@drawable/profile_avatar" />
 
     <ImageButton
-        android:id="@+id/imgbtn_loaduseravatar"
+        android:id="@+id/ibtn_load_avatar"
         android:layout_width="@dimen/size_imgbtn_loaduseravatar"
         android:layout_height="@dimen/size_imgbtn_loaduseravatar"
         android:layout_marginStart="@dimen/spacing_imgbtn_loaduseravatar_left"
@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toTopOf="@id/appbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/iv_useravatar"
+        app:layout_constraintStart_toStartOf="@+id/iv_avatar"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@mipmap/ic_load_avatar" />
@@ -57,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_useravatar"
+        app:layout_constraintTop_toBottomOf="@+id/iv_avatar"
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
@@ -65,77 +65,90 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_name"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content" >
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_name"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/name"
-                    android:paddingBottom="@dimen/spacing_medium"
-                    android:textColor="@color/colorBlack"
-                    android:textColorHint="@color/colorHeaders"
-                    android:textColorLink="@color/colorPrimary"
-                    android:textSize="@dimen/textsize_large" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_surname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/name"
+                            android:paddingBottom="@dimen/spacing_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorHeaders"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="@dimen/textsize_large" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_surname"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/surname"
-                    android:paddingBottom="@dimen/spacing_medium"
-                    android:textColor="@color/colorBlack"
-                    android:textColorHint="@color/colorHeaders"
-                    android:textColorLink="@color/colorPrimary"
-                    android:textSize="@dimen/textsize_large" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_surname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_viewname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_surname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/surname"
+                            android:paddingBottom="@dimen/spacing_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorHeaders"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="@dimen/textsize_large" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_viewname"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/viewname"
-                    android:paddingBottom="@dimen/spacing_medium"
-                    android:textColor="@color/colorBlack"
-                    android:textColorHint="@color/colorHeaders"
-                    android:textColorLink="@color/colorPrimary"
-                    android:textSize="@dimen/textsize_large" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_viewname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_aboutuser"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_view_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/viewname"
+                            android:paddingBottom="@dimen/spacing_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorHeaders"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="@dimen/textsize_large" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_aboutuser"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/aboutuser"
-                    android:paddingBottom="@dimen/spacing_medium"
-                    android:textColor="@color/colorBlack"
-                    android:textColorHint="@color/colorHeaders"
-                    android:textColorLink="@color/colorPrimary"
-                    android:textSize="@dimen/textsize_large" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_aboutuser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_about_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/aboutuser"
+                            android:paddingBottom="@dimen/spacing_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorHeaders"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="@dimen/textsize_large" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
     </ScrollView>
 

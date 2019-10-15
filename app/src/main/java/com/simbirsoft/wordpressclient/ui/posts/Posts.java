@@ -16,7 +16,6 @@ class Posts {
         this.publication = publication;
     }
 
-
     int getAvatar() {
         return avatar;
     }

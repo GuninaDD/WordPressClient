@@ -36,8 +36,8 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
     @Override
     public void onBindViewHolder(@NonNull CategoriesViewHolder holder, int position) {
         Categories categories = categoriesList.get(position);
-        holder.header.setText(categories.getCategorie());
-        holder.description.setText(categories.getCategorieDescription());
+        holder.header.setText(categories.getCategory());
+        holder.description.setText(categories.getCategoryDescription());
     }
 
     @Override
@@ -51,8 +51,8 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
         CategoriesViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            header = itemView.findViewById(R.id.tv_categorieheader);
-            description = itemView.findViewById(R.id.tv_categoriedescription);
+            header = itemView.findViewById(R.id.tv_category_header);
+            description = itemView.findViewById(R.id.tv_category_description);
         }
     }
 }

@@ -14,33 +14,25 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.google.android.material.navigation.NavigationView;
 import com.simbirsoft.wordpressclient.ui.blogs.BlogsFragment;
 import com.simbirsoft.wordpressclient.ui.bookmarks.BookmarksFragment;
 import com.simbirsoft.wordpressclient.ui.categories.CategoriesFragment;
 import com.simbirsoft.wordpressclient.ui.favorites.FavoritesFragment;
 import com.simbirsoft.wordpressclient.ui.labels.LabelsFragment;
+import com.simbirsoft.wordpressclient.ui.login.LoginFragment;
 import com.simbirsoft.wordpressclient.ui.profile.ProfileActivity;
-
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.view.Menu;
 import android.view.View;
 
-
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+public class WordpressActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
 
     DrawerLayout drawer;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,23 +52,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_blogs, R.id.nav_categories, R.id.nav_labels,
-                R.id.nav_favorites, R.id.nav_bookmarks, R.id.nav_exit)
+                R.id.nav_favorites, R.id.nav_bookmarks)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
         navigationView.setNavigationItemSelectedListener(this);
-
-
     }
 
     public void openProfile(View view) {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -127,12 +115,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new BookmarksFragment();
                 break;
 
+            case R.id.nav_exit:
+                fragment = new LoginFragment();
+                break;
+
             default:
                 fragment = new BlogsFragment();
                 break;
-
         }
-
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.constraintContainer, fragment).commit();
@@ -145,6 +135,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 
 }

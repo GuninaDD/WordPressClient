@@ -55,9 +55,9 @@ public class BookmarksAdapter extends RecyclerView.Adapter<BookmarksAdapter.Book
 
         BookmarksViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.iv_blogimage);
-            blogHeader = itemView.findViewById(R.id.tv_blogheader);
-            blogURL = itemView.findViewById(R.id.tv_blogurl);
+            imageView = itemView.findViewById(R.id.iv_blog);
+            blogHeader = itemView.findViewById(R.id.tv_blog_header);
+            blogURL = itemView.findViewById(R.id.tv_blog_url);
         }
     }
 }

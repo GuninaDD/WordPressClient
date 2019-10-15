@@ -2,20 +2,20 @@ package com.simbirsoft.wordpressclient.ui.categories;
 
 class Categories {
 
-    Categories(String categorie, String categorieDescription) {
-        this.categorie = categorie;
-        this.categorieDescription = categorieDescription;
+    Categories(String category, String categoryDescription) {
+        this.category = category;
+        this.categoryDescription = categoryDescription;
     }
 
-    private String categorie;
-    private String categorieDescription;
+    private String category;
+    private String categoryDescription;
 
-    String getCategorie() {
-        return categorie;
+    String getCategory() {
+        return category;
     }
 
-    String getCategorieDescription() {
-        return categorieDescription;
+    String getCategoryDescription() {
+        return categoryDescription;
     }
 
 
