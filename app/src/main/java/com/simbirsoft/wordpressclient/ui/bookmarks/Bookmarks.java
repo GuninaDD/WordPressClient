@@ -5,7 +5,7 @@ class Bookmarks {
     private String header;
     private String bookmarksURL;
 
-    public Bookmarks(int image, String header, String bookmarksURL) {
+    Bookmarks(int image, String header, String bookmarksURL) {
         this.image = image;
         this.header = header;
         this.bookmarksURL = bookmarksURL;

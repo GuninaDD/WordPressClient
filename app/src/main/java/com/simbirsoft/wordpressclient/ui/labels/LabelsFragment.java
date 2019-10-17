@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,20 +17,12 @@ import java.util.List;
 
 public class LabelsFragment extends Fragment {
 
-    LabelsViewModel labelsViewModel;
-
-    RecyclerView recyclerView;
-    LabelsAdapter labelsAdapter;
-    List<Labels> labelsList;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        labelsList = new ArrayList<>();
-        labelsViewModel =
-                ViewModelProviders.of(this).get(LabelsViewModel.class);
+        List<Labels> labelsList = new ArrayList<>();
         View root = inflater.inflate(R.layout.screen_labels, container, false);
 
-        recyclerView = root.findViewById(R.id.rv_labels);
+        RecyclerView recyclerView = root.findViewById(R.id.rv_labels);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         labelsList.add(
@@ -39,10 +30,8 @@ public class LabelsFragment extends Fragment {
         labelsList.add(
                 new Labels(R.mipmap.ic_green_label, "Метка 2"));
 
-
-        labelsAdapter = new LabelsAdapter(getActivity(), labelsList);
+        LabelsAdapter labelsAdapter = new LabelsAdapter(getActivity(), labelsList);
         recyclerView.setAdapter(labelsAdapter);
-
 
         return root;
     }

@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -20,20 +19,12 @@ import java.util.List;
 
 public class BookmarksFragment extends Fragment {
 
-    RecyclerView recyclerView;
-    BookmarksAdapter bookmarksAdapter;
-    List<Bookmarks> bookmarksList;
-
-    BookmarksViewModel bookmarksViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        bookmarksList = new ArrayList<>();
-        bookmarksViewModel =
-                ViewModelProviders.of(this).get(BookmarksViewModel.class);
+        List<Bookmarks> bookmarksList = new ArrayList<>();
         View root = inflater.inflate(R.layout.screen_bookmarks, container, false);
 
-        recyclerView = root.findViewById(R.id.rv_bookmarks);
+        RecyclerView recyclerView = root.findViewById(R.id.rv_bookmarks);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         bookmarksList.add(
@@ -48,7 +39,7 @@ public class BookmarksFragment extends Fragment {
                 new Bookmarks(R.drawable.ic_image, "Интересный блог 5", "intrestingblog5.wordpress.com"));
 
 
-        bookmarksAdapter = new BookmarksAdapter(getActivity(), bookmarksList);
+        BookmarksAdapter bookmarksAdapter = new BookmarksAdapter(getActivity(), bookmarksList);
         recyclerView.setAdapter(bookmarksAdapter);
 
         return root;

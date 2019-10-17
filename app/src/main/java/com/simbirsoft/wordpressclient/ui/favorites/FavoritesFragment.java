@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,20 +17,12 @@ import java.util.List;
 
 public class FavoritesFragment extends Fragment {
 
-    RecyclerView recyclerView;
-    FavoritesAdapter favoritesAdapter;
-    List<Favorites> favoritesList;
-
-    FavoritesViewModel favoritesViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        favoritesList = new ArrayList<>();
-        favoritesViewModel =
-                ViewModelProviders.of(this).get(FavoritesViewModel.class);
+        List<Favorites> favoritesList = new ArrayList<>();
         View root = inflater.inflate(R.layout.screen_favorites, container, false);
 
-        recyclerView = root.findViewById(R.id.rv_favorites);
+        RecyclerView recyclerView = root.findViewById(R.id.rv_favorites);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         favoritesList.add(
@@ -45,8 +36,7 @@ public class FavoritesFragment extends Fragment {
         favoritesList.add(
                 new Favorites(R.drawable.ic_image, "Мой любимый блог 5", "myloveblog5.wordpress.com"));
 
-
-        favoritesAdapter = new FavoritesAdapter(getActivity(), favoritesList);
+        FavoritesAdapter favoritesAdapter = new FavoritesAdapter(getActivity(), favoritesList);
         recyclerView.setAdapter(favoritesAdapter);
 
         return root;

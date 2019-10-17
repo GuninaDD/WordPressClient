@@ -57,6 +57,7 @@ public class AuthenticationDialog extends Dialog {
             if (url.contains("access_token=")) {
                 Uri uri = Uri.parse(url);
                 String access_token = uri.getEncodedFragment();
+                assert access_token != null;
                 access_token = access_token.substring(access_token.lastIndexOf('=') + 1);
                 Log.e("access_token", access_token);
                 listener.onTokenReceived(access_token);
